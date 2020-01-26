@@ -37,7 +37,7 @@ export default {
 }
 ```
 
-### 3. Global installation
+### 3. Global installation (not recommended)
 If project size does not need to be considered as much (e.g. in a design systems documentation env.) it is also possible to use the illustrations globally.
 
 Just add this in your entrypoints js-file:
