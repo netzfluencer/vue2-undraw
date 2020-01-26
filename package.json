@@ -1,0 +1,66 @@
+{
+  "name": "vue-undraw",
+  "description": "A component library of undraw.co for vue.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "contributors": [
+    "Marvin Klimm <undraw.vue.dev@marvin.works>"
+  ],
+  "scripts": {
+    "rename": "node ./scripts/renameSvgs.js",
+    "components": "node ./scripts/createComponents.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --no-clean --target lib --name vue-undraw ./src/main.js"
+  },
+  "homepage": "https://undraw.co/",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/netzfluencer/vue-undraw"
+  },
+  "main": "./dist/vue-undraw.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
+  "dependencies": {
+    "core-js": "^3.4.4",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "cheerio": "^1.0.0-rc.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "keywords": [
+    "vue",
+    "illustrations",
+    "svg",
+    "undraw",
+    "icons"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
