@@ -2,6 +2,12 @@
 Vue Illustration Components from https://undraw.co/
 For any requests open an issue on https://github.com/netzfluencer/vue-undraw/issues
 
+**Main Features**
+* global default color setup
+* component color prop for indivdual color on components instances
+* general 'vue-undraw' class for global illustration styling
+* indivual 'vue-undraw--{componentName}' class for indivual styling
+
 ## Installation
 `npm install vue2-undraw`
 
