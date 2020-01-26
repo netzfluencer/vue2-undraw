@@ -1,9 +1,9 @@
-# vue-undraw
+# vue2-undraw
 Vue Illustration Components from https://undraw.co/
 For any requests open an issue on https://github.com/netzfluencer/vue-undraw/issues
 
 ## Installation
-`npm install vue-undraw`
+`npm install vue2-undraw`
 
 ## Setup
 You can use the vue-undraw in multiple approaches. Keep in mind that the total size of all illustrations goes beyond 20mb. A global usage in vue projects is technical possible, but not generaly not recommended.
@@ -11,7 +11,7 @@ You can use the vue-undraw in multiple approaches. Keep in mind that the total s
 ### 1. Register a component by referencing to the specific Source
 This is the most simplest approach to keep depended projects as small as possible, by importing only the illustrations which are needed.
 ```
-import UndrawAddColor from 'vue-undraw/src/components/UndrawAddColor'
+import UndrawAddColor from 'vue2-undraw/src/components/UndrawAddColor'
 
 export default {
   components: {
@@ -20,14 +20,14 @@ export default {
 }
 ```
 
-### 2. Register a component-module from '@netzfluencer/vue-undraw'
+### 2. Register a component-module from 'vue2-undraw'
 Similar to first approach. Benefits compared to first:
 1. shorter and clearer imports
 2. consistent illustrationnames
 
 Feel free to take this approach if treeshaking is no problem. https://webpack.js.org/guides/tree-shaking/
 ```
-import { UndrawAbstract, UndrawAddColor } from '@netzfluencer/vue-undraw'
+import { UndrawAbstract, UndrawAddColor } from 'vue2-undraw'
 
 export default {
   components: {
@@ -42,15 +42,15 @@ If project size does not need to be considered as much (e.g. in a design systems
 
 Just add this in your entrypoints js-file:
 ```
-import * as VueUndraw from 'vue-undraw'
+import * as VueUndraw from 'vue2-undraw'
 
 Vue.use(VueUndraw)
 ```
 
 ## Color Setup
-By default the svgs colors are inherting the svgs/parents text-color. You can overwrite this colors by using the `vue-undraw` css-class or by setting it up in the installations options. (If you don't want to install the components globally you need to add the `noGlobalInstall: true` key too)
+By default the svgs colors are inherting the svgs/parents text-color. You can overwrite this colors by using the `vue2-undraw` css-class or by setting it up in the installations options. (If you don't want to install the components globally you need to add the `noGlobalInstall: true` key too)
 ```
-import * as VueUndraw from 'vue-undraw'
+import * as VueUndraw from 'vue2-undraw'
 
 Vue.use(VueUndraw, {color: '#777777', noGlobalInstall: true})
 ```

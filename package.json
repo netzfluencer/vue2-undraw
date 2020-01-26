@@ -1,5 +1,5 @@
 {
-  "name": "vue-undraw",
+  "name": "vue2-undraw",
   "description": "A component library of undraw.co for vue.",
   "version": "0.1.0",
   "license": "MIT",
@@ -10,14 +10,14 @@
     "rename": "node ./scripts/renameSvgs.js",
     "components": "node ./scripts/createComponents.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --no-clean --target lib --name vue-undraw ./src/main.js"
+    "build": "vue-cli-service build --no-clean --target lib --name vue2-undraw ./src/main.js"
   },
   "homepage": "https://undraw.co/",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/netzfluencer/vue-undraw"
+    "url" : "https://github.com/netzfluencer/vue2-undraw"
   },
-  "main": "./dist/vue-undraw.common.js",
+  "main": "./dist/vue2-undraw.common.js",
   "files": [
     "dist/*",
     "src/*",
