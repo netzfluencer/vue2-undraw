@@ -77,7 +77,7 @@ npm run rename
 ### Component Creation
 Create vue components from svgs. Some manual adjustments need to get done (e.g. syntax errors in components/index.js)
 ```
-npm run create
+npm run components
 ```
 
 ### Compiles and minifies for production
