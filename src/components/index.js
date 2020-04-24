@@ -826,7 +826,7 @@ import UndrawQAEngineers from './UndrawQAEngineers'
 import UndrawQualityTime from './UndrawQualityTime'
 import UndrawQuestions from './UndrawQuestions'
 import UndrawQueue from './UndrawQueue'
-import UndrawQuiteTown from './UndrawQuiteTown'
+import UndrawQuietTown from './UndrawQuietTown'
 import UndrawQuittingTime from './UndrawQuittingTime'
 import UndrawQuiz from './UndrawQuiz'
 import UndrawRaining from './UndrawRaining'
@@ -1993,7 +1993,7 @@ export {
   UndrawQualityTime,
   UndrawQuestions,
   UndrawQueue,
-  UndrawQuiteTown,
+  UndrawQuietTown,
   UndrawQuittingTime,
   UndrawQuiz,
   UndrawRaining,

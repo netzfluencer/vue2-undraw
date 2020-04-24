@@ -1,7 +1,7 @@
 {
   "name": "vue2-undraw",
   "description": "A component library of undraw.co for vue.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "contributors": [
     "Marvin Klimm <undraw.vue.dev@marvin.works>"
