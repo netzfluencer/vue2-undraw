@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-import { useUndraw } from '@/composables/useUndraw'
+import { useUndraw } from '../composables/useUndraw'
 
 const props = defineProps({
   color: {
