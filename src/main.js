@@ -1,25 +1,26 @@
 /* eslint-disable no-console */
 import * as illustrations from './components'
 
-function installComponents (Vue, components) {
+function installComponents(app, components) {
   Object.keys(components).forEach(name => {
-    Vue.component(name, components[name])
+    app.component(name, components[name])
   })
 }
 
 let installed = false
 
-export function install (Vue, {color, noGlobalInstall}) {
+export function install(app, options = {}) {
   if (installed) {
     console.error('vue-undraw is already installed.')
     return
   }
   installed = true
 
-  Vue.prototype.$vueUndrawColor = color ? color : null
+  // Provide the color globally using Vue 3's provide/inject
+  app.provide('$vueUndrawColor', options.color || null)
 
-  if (!noGlobalInstall) {
-    installComponents(Vue, illustrations, {})
+  if (!options.noGlobalInstall) {
+    installComponents(app, illustrations)
   }
 }
 

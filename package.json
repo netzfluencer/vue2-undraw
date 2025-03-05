@@ -6,16 +6,18 @@
   "contributors": [
     "Marvin Klimm <undraw.vue.dev@marvin.works>"
   ],
+  "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "rename": "node ./scripts/renameSvgs.js",
-    "components": "node ./scripts/createComponents.js",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --no-clean --target lib --name vue2-undraw ./src/main.js"
+    "components": "node ./scripts/createComponents.js"
   },
   "homepage": "https://undraw.co/",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/netzfluencer/vue2-undraw"
+    "type": "git",
+    "url": "https://github.com/netzfluencer/vue2-undraw"
   },
   "main": "./dist/vue2-undraw.common.js",
   "files": [
@@ -26,17 +28,17 @@
   ],
   "dependencies": {
     "core-js": "^3.4.4",
-    "vue": "^2.6.10"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.1.0",
-    "@vue/cli-plugin-eslint": "^4.1.0",
-    "@vue/cli-service": "^4.1.0",
-    "babel-eslint": "^10.0.3",
-    "cheerio": "^1.0.0-rc.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "@eslint/js": "^9.20.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "eslint": "^9.20.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.5.1",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2"
   },
   "keywords": [
     "vue",

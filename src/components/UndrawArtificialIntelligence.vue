@@ -5,10 +5,14 @@
   </svg>
 </template>
 
-<script>
-import { undrawMixin } from './undraw.mixin'
+<script setup>
+import { useUndraw } from '@/composables/useUndraw'
 
-export default {
-  mixins: [undrawMixin('UndrawArtificialIntelligence')]
-}
+const props = defineProps({
+  color: {
+    type: String,
+    default: null
+  }
+})
+const { width, style, classes } = useUndraw('UndrawArtificialIntelligence', props)
 </script>
