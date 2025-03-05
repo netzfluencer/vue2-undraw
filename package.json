@@ -1,7 +1,7 @@
 {
   "name": "vue2-undraw",
   "description": "A component library of undraw.co for vue.",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "license": "MIT",
   "contributors": [
     "Marvin Klimm <undraw.vue.dev@marvin.works>"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/netzfluencer/vue2-undraw"
   },
-  "main": "./dist/vue2-undraw.common.js",
+  "main": "./dist/vue2-undraw.es.js",
   "files": [
     "dist/*",
     "src/*",
